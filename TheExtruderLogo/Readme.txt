@@ -1,4 +1,4 @@
-This my first 3D model!  It is the logo of my new endever revolving around my 3D printing.
+This my first 3D model!  It is the logo for my new endeavor revolving around my 3D printing.
 
 Tools used to create these:
 - Inkscape
@@ -10,9 +10,9 @@ Tools used to create these:
 - Inkscape extension to export to OpenSCAD
   - https://github.com/brad/Inkscape-OpenSCAD-DXF-Export
   
-All these tools are free and run on Linux.
+All these tools are free and run on Linux and other platforms.
 
-This article was very helpful taking thru an an exaple workflow:  http://makezine.com/projects/3d-print-custom-stamps-using-inkscape-and-openscad/
+This article was very helpful in taking me thru an example workflow:  http://makezine.com/projects/3d-print-custom-stamps-using-inkscape-and-openscad/
 
 My workflow:
 1)  Create vector art in Inkscape
