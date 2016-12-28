@@ -9,9 +9,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg4434"
-   viewBox="0 0 354.33072 354.33072"
-   height="100mm"
-   width="100mm"
+   viewBox="0 0 348.09795 255.81385"
+   height="72.19635mm"
+   width="98.240974mm"
    inkscape:version="0.91 r13725"
    sodipodi:docname="TheExtruder_3d_model_base.svg">
   <sodipodi:namedview
@@ -28,13 +28,17 @@
      id="namedview4166"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="50.303718"
-     inkscape:cy="247.01024"
+     inkscape:cx="-223.31266"
+     inkscape:cy="195.7518"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     units="mm" />
+     units="mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs4436" />
   <metadata
@@ -45,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,7 +57,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Main"
-     transform="translate(0,-5.6692805)"
+     transform="translate(-3.1163768,-54.927717)"
      style="display:inline">
     <path
        inkscape:connector-curvature="0"
@@ -74,7 +78,8 @@
     <path
        style="display:inline"
        d="m 70.003906,75.569671 -14.160156,7.878906 0,95.859373 14.167969,0 1.589843,-0.13476 0,-1.45703 -1.591796,-1.51758 0,-45.61524 1.300781,-2.82031 2.240234,0.14453 1.15625,2.67578 0,48.72461 15.761719,0 0,-1.80664 -1.591797,-1.5918 0,-57.90625 -0.941406,-1.88086 -0.650391,-1.22851 -2.386718,-1.30078 -2.314454,-0.28711 -9.470703,0 -2.96289,0.72266 -0.146485,-3.9043 0,-34.554689 z"
-       id="path6231" />
+       id="path6231"
+       inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        style="display:inline"
