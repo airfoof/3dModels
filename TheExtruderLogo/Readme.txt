@@ -27,3 +27,18 @@ My workflow:
 10) Open Slic3r and add the .stl file
 11) Preview the model and adjust your Slic3r settings
 12) You're done!
+
+
+There are 2 different types of logos in this folder. The first is a logo with a square background.  These files are associated with that:
+- TheExtruder_3d_model_base.svg
+- TheExtruder_3d_model_base.dxf
+- TheExtruder_3d_model.scad
+- TheExtruder_3d_model.stl
+
+The next version of the logo is with a thin line border.  Here are the files associated with that:
+- TheExtruder_3d_model_text_base.svg
+- TheExtruder_3d_model_text_base.dxf
+- TheExtruder_3d_model_thin_border_base.svg
+- TheExtruder_3d_model_thin_border_base.dxf
+- TheExtruder_3d_model_thin_border.scad
+- TheExtruder_3d_model_thin_border.stl
