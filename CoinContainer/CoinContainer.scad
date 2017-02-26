@@ -5,7 +5,7 @@
 */
 part = "both" ; // [first:Container Only,second:Cap Only,both:Container and Cap]
 
-numberOfCoins = 10; //[1:1:100]
+numberOfCoins = 10;
 
 //in millimeters
 coinHeight = 3;

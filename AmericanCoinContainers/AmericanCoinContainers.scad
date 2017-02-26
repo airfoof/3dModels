@@ -3,9 +3,9 @@
 **  Author:  Chris Benson  @TheExtruder
 **  Created:  2/24/2017
 */
-coin = "Silver Eagles" ; // [Pennies,Nickels,Dimes,Quarters,Silver Eagles]
+coin = "Dollar" ; // [Pennies,Nickels,Dimes,Quarters,Dollar,Silver Eagles]
 
-numberOfCoins = 20; //[1:1:100]
+numberOfCoins = 25;
 
 /* [Hidden] */
 $fn = 100;
@@ -44,6 +44,14 @@ module print_part() {
             numberOfCoins = numberOfCoins,
             coinHeight = 1.77,
             coinDiameter = 24.28,
+            wallThickness = wallThickness,
+            capHeight = capHeight
+        );
+    } else if (coin == "Dollar") {
+		CreateContainerAndCap(
+            numberOfCoins = numberOfCoins,
+            coinHeight = 2.02,
+            coinDiameter = 25.7,
             wallThickness = wallThickness,
             capHeight = capHeight
         );
