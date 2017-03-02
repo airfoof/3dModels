@@ -67,16 +67,16 @@ module print_part() {
 //base
 module Base(){
     difference(){
-        union(){
-            difference(){
-                cube([baseWidth+sideBuffer, baseHeight, baseDepth], false);
-                //todo: sticker indents
-                color("red")
-                    translate([(baseWidth + sideBuffer)/2,baseHeight/2,baseDepth/(baseDepth*2)])
-                        linear_extrude(height = baseDepth)
-                            text("Back", valign="bottom", halign="center");
-            }
-        }
+        cube([baseWidth+sideBuffer, baseHeight, baseDepth], false);
+        color("red")
+        //    translate([(baseWidth + sideBuffer)/2,baseHeight/2,baseDepth/(baseDepth*2)])
+        //        linear_extrude(height = baseDepth)
+        //            text("Back", valign="bottom", halign="center");
+        //logo
+        translate([-3,200,1.5])
+            scale([.5,.5])
+               linear_extrude(height = 1)
+                    import(file = "TheExtruder_3d_model_text_base.dxf", layer = "Main");//, origin=[0,-350]
         
         translate([0,baseHeight-topBuffer,0])
             cube([padHolderThickness, topPadHolderHeight, baseDepth], false);
@@ -98,6 +98,7 @@ module Base(){
             cube([penCupBaseOverlap, penCupHeight, penCupAttachmentThickness], true);
     }
 }
+
 
 //pen cup
 module PenCup(){
@@ -131,10 +132,11 @@ module BottomPadHolder(){
 //Top Pad Holder
 module TopPadHolder(){
     union(){
-        #cube([baseWidth+sideBuffer, topPadHolderHeight, padHolderThickness], false);
+        cube([baseWidth+sideBuffer, topPadHolderHeight, padHolderThickness], false);
         
         cube([padHolderThickness, topPadHolderHeight, baseDepth+basePadHolderBuffer], false);
         translate([baseWidth + sideBuffer - padHolderThickness,0,0])
             cube([padHolderThickness, topPadHolderHeight, baseDepth+basePadHolderBuffer], false);
     }
 }
+
