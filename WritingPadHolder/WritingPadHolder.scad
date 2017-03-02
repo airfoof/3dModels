@@ -4,7 +4,7 @@
 **  Created:  2/24/2017
 */
 
-part = "All" ; // [Base,Pen Cup,Top Pad Holder,Bottom Pad Holder,All]
+part = "Base" ; // [Base,Pen Cup,Top Pad Holder,Bottom Pad Holder,All]
 
 /*[Base Dimensions]*/
 baseWidth = 127;
@@ -73,7 +73,7 @@ module Base(){
         //        linear_extrude(height = baseDepth)
         //            text("Back", valign="bottom", halign="center");
         //logo
-        translate([-3,200,1.5])
+        translate([-3,200,1.25])
             scale([.5,.5])
                linear_extrude(height = 1)
                     import(file = "TheExtruder_3d_model_text_base.dxf", layer = "Main");//, origin=[0,-350]
