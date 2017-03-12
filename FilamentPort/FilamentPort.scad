@@ -8,15 +8,15 @@ part = "both" ; // [first:Plug Only,second:Cap Only,both:Plug and Cap]
 
 /*[Base]*/
 //in millimeters
-totalHeight = 56;
-//in millimeters
 baseDiameter = 30;
 //in millimeters
 baseChamferDiameter = 27.5;
 //in millimeters
-baseHeight = 3;
+baseHeight = 2;
 
 /*[Plug]*/
+//in millimeters
+plugLength = 18.66;
 //in millimeters
 plugOD = 6;
 //in millimeters
@@ -28,7 +28,7 @@ capDiameter = 12;
 //in millimeters
 capChamferDiameter = 10;
 //in millimeters
-capHeight = 3;
+capHeight = 2;
 
 /*[Hidden]*/
 $fn = 100;
@@ -56,10 +56,10 @@ module PortAndCap(){
 module Port(){
     difference(){
         union(){
-            cylinder(totalHeight, d=plugOD, false);
+            cylinder(baseHeight+plugLength+capHeight, d=plugOD, false);
             cylinder(baseHeight, d1=baseChamferDiameter, d2=baseDiameter, false);
         }
-        cylinder(totalHeight, d=plugID, false);
+        cylinder(baseHeight+plugLength+capHeight, d=plugID, false);
     }
 }
 
