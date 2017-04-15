@@ -21,6 +21,8 @@ plugLength = 18.66;
 plugOD = 6;
 //in millimeters
 plugID = 4.5;
+//add lip?
+addLip = true;
 
 /*[Cap]*/
 //in millimeters
@@ -32,6 +34,8 @@ capHeight = 2;
 
 /*[Hidden]*/
 $fn = 100;
+
+lipHeight = 1;
 
 print_part();
 
@@ -60,6 +64,19 @@ module Port(){
             cylinder(baseHeight, d1=baseChamferDiameter, d2=baseDiameter, false);
         }
         cylinder(baseHeight+plugLength+capHeight, d=plugID, false);
+    }
+    
+    //lip
+    if(addLip){
+        translate([0,0,baseHeight+plugLength+capHeight-lipHeight]){
+            difference(){
+                cylinder(lipHeight, d=plugID, false);
+                difference(){
+                    cylinder(lipHeight, d1=plugID,d2=plugID-1, false);
+                    //cylinder(lipHeight, d=plugID-1, false);
+                }
+            }
+        }
     }
 }
 
